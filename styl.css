@@ -9,7 +9,7 @@ header{
 body{
     display: grid;
     margin: 0;
-    height: 99vh;
+    height: 100vh;
     font-family: "Sour Gummy";
     text-transform: uppercase;
     color: black;}
@@ -19,11 +19,11 @@ footer{
     padding: 3em 0;
     justify-content: left;
     background-color: #50200b;
-    padding-left: 5%;
     margin-left: 1;
     font-size: 1em;
-    text-transform: capitalize;}
-
+    text-transform: capitalize;
+  }
+    
 main{
     display: flex;
     justify-content: center;
@@ -195,10 +195,8 @@ video {
 
 #clock {
   position: absolute;
-  bottom: 10px;
   right: 10px;
   font-size: 24px;
-  font-family: 'Arial', sans-serif;
   font-weight: bold;
   color: white;
 }

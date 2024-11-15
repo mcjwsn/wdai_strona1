@@ -32,25 +32,20 @@ function showLink() {
 }
 
 function updateClock() {
-    const now = new Date(); // Pobieramy aktualny czas
-    let hours = now.getHours(); // Godzina
-    let minutes = now.getMinutes(); // Minuty
-    let seconds = now.getSeconds(); // Sekundy
+    const now = new Date(); 
+    let hours = now.getHours(); 
+    let minutes = now.getMinutes(); 
+    let seconds = now.getSeconds();
 
-    // Dodajemy zerowanie, jeśli godziny, minuty lub sekundy są mniejsze niż 10
     hours = hours < 10 ? '0' + hours : hours;
     minutes = minutes < 10 ? '0' + minutes : minutes;
     seconds = seconds < 10 ? '0' + seconds : seconds;
 
-    // Łączymy godzinę, minutę i sekundę w odpowiedni format
     const timeString = hours + ':' + minutes + ':' + seconds;
 
-    // Wyświetlamy wynik w elemencie o id "clock"
     document.getElementById('clock').textContent = timeString;
 }
 
-// Aktualizowanie zegara co 1000 ms (1 sekunda)
 setInterval(updateClock, 1000);
 
-// Uruchamiamy zegar natychmiast po załadowaniu strony
 updateClock();
