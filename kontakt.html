@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="icon" href="ikona.png" type="image/x-icon">
+    <link rel="stylesheet" href="styl.css"/>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="Generowanie podróży.html">Wyprawa na kamienie</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main id = "main2">
+        <h2>Możliwość Kontatku</h2>
+        <h6>Niezbędne uzupełnienie poniższego formularza</h6>
+        <form>
+            <div class="formularz">
+              <label for="email">Adres E-Mailowy</label><br/>
+              <input type="email" id="email" name="email" placeholder="Adres.mailowy@student..." required /><br />
+              <label for="topic">Temat wysyłanej wiadomości</label><br />
+              <select id="topic" name="topic" placeholder="Temat">
+                <option value="1">Wyprawa na kamienie</option>
+                <option value="2">Kamienie z galerii</option>
+                <option value="3">Ofera współpracy</option>
+                <option value="4">Problemy techniczne</option>
+                <option value="5">Inne...</option>
+              </select>
+            </br>
+              <label for="info">Treść wiadomości</label><br />
+              <textarea name="info" id="info" cols="20" rows="10" placeholder="Wiadomość..." required ></textarea><br />
+              <button type="submit" id="button_kontakt">Wyślij</button>
+            </div>
+          </form>
+      </main>
+    <footer>Maciej Wiśniewski © 2024</footer>
+</body>
+</html>

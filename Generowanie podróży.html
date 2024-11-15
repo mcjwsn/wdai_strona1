@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyprawa na kamienie</title>
+    <link rel="icon" href="ikona.png" type="image/x-icon">
+    <link rel="stylesheet" href="styl.css"/>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="Generowanie podróży.html">Wyprawa na kamienie</a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class=  "main4">
+        <h1>Wyprawa na kamienie</h1>
+        <p>WYbierz swoje województwo zamieszkania i zobacz sugerowaną lokalizację na wycieczkę na poszukiwanie minerałów</p>
+        <h1>Wybierz województwo zamieszkania</h1>
+
+    <form id="wojewodztwoForm">
+        <label for="wojewodztwo" >Województwo:</label>
+        <select id="wojewodztwo" required>
+            <option value="">--Wybierz województwo--</option>
+            <option value="dolnoslaskie">Dolnośląskie</option>
+            <option value="kujawsko-pomorskie">Kujawsko-Pomorskie</option>
+            <option value="lubelskie">Lubelskie</option>
+            <option value="lubuskie">Lubuskie</option>
+            <option value="lodzkie">Łódzkie</option>
+            <option value="malopolskie">Małopolskie</option>
+            <option value="mazowieckie">Mazowieckie</option>
+            <option value="opolskie">Opolskie</option>
+            <option value="podkarpackie">Podkarpackie</option>
+            <option value="podlaskie">Podlaskie</option>
+            <option value="pomorskie">Pomorskie</option>
+            <option value="slaskie">Śląskie</option>
+            <option value="swietokrzyskie">Świętokrzyskie</option>
+            <option value="warminsko-mazurskie">Warmińsko-Mazurskie</option>
+            <option value="wielkopolskie">Wielkopolskie</option>
+            <option value="zachodniopomorskie">Zachodniopomorskie</option>
+        </select>
+        <button type="button" class="last-buton" onclick="showLink()">Pokaż link</button>
+        <p id="result" style = "color: aqua;"></p>
+    </form>
+</div>
+    
+</body>
+<footer>Maciej Wiśniewski © 2024
+    <div style="padding-right: 5%" id="clock"></div>
+</footer>
+</html>
